@@ -10,17 +10,18 @@
     tools:context="com.example.laboratorio.ciclodevida.Exercicio1">
 
     <Button
+        android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/button8"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp" />
+        android:layout_marginTop="76dp"
+        android:onClick="enviarResposta"
+        android:text="Enviar" />
 
     <EditText
+        android:id="@+id/edNumero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edNumero"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:hint="Digite um Numero" />

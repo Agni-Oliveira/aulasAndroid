@@ -2,21 +2,11 @@ package com.example.laboratorio.ciclodevida;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.provider.Contacts;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ListMain extends ListActivity {
 
@@ -25,7 +15,13 @@ public class ListMain extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String[] values = new String[] {"Calculadora", "Principal", "MainActivity","Exercicio1"};
+        String[] values = new String[]
+                {"Calculadora",
+                        "Principal",
+                        "MainActivity",
+                        "Exercicio1",
+                        "Q02"
+                };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);
     }
@@ -49,10 +45,14 @@ public class ListMain extends ListActivity {
                 i = new Intent(this, MainActivity.class);
                 startActivity(i);
                 break;
-            case "Antecessor e Sucessor":
+            case "Exercicio1":
             i = new Intent(this, Exercicio1.class);
             startActivity(i);
             break;
+            case "Q02":
+                i = new Intent(this, Q02.class);
+                startActivity(i);
+                break;
 
         }
     }
