@@ -20,7 +20,17 @@ public class ListMain extends ListActivity {
                         "Principal",
                         "MainActivity",
                         "Exercicio1",
-                        "Q02"
+                        "Q02",
+                        "Q03",
+                        "Q04",
+                        "Q05",
+                        "Q06",
+                        "Q07",
+                        "Q08",
+                        "Q09",
+                        "Q010",
+                        "Q011",
+                        "Q012"
                 };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);
@@ -51,6 +61,46 @@ public class ListMain extends ListActivity {
             break;
             case "Q02":
                 i = new Intent(this, Q02.class);
+                startActivity(i);
+                break;
+            case "Q03":
+                i = new Intent(this, Q03.class);
+                startActivity(i);
+                break;
+            case "Q04":
+                i = new Intent(this, Q04.class);
+                startActivity(i);
+                break;
+            case "Q05":
+                i = new Intent(this, Q05.class);
+                startActivity(i);
+                break;
+            case "Q06":
+                i = new Intent(this, Q06.class);
+                startActivity(i);
+                break;
+            case "Q07":
+                i = new Intent(this, Q07.class);
+                startActivity(i);
+                break;
+            case "Q08":
+                i = new Intent(this, Q08.class);
+                startActivity(i);
+                break;
+            case "Q09":
+                i = new Intent(this, Q09.class);
+                startActivity(i);
+                break;
+            case "Q10":
+                i = new Intent(this, Q10.class);
+                startActivity(i);
+                break;
+            case "Q11":
+                i = new Intent(this, Q11.class);
+                startActivity(i);
+                break;
+            case "Q12":
+                i = new Intent(this, Q12.class);
                 startActivity(i);
                 break;
 
